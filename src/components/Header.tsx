@@ -28,8 +28,8 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className={`text-2xl font-bold font-[Prompt] transition-all duration-300`}>
-            <span style={{ color: isScrolled ? '#475569' : 'white' }}>vusi dulini </span>
+          <div className={`text-xl sm:text-2xl font-bold font-[Prompt] transition-all duration-300 flex flex-col sm:flex-row gap-1 sm:gap-2`}>
+            <span style={{ color: isScrolled ? '#475569' : 'white' }}>vusi dulini</span>
             <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">portfolio</span>
           </div>
           
