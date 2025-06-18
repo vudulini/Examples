@@ -30,7 +30,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className={`text-lg sm:text-xl md:text-2xl font-bold font-[Prompt] transition-all duration-300 flex flex-col sm:flex-row gap-1 sm:gap-2`}>
             <span style={{ color: isScrolled ? '#475569' : 'white' }}>vusi dulini</span>
-            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">portfolio</span>
+            {/* <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">portfolio</span> */}
           </div>
           
           {/* Desktop Navigation */}

@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
-  const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('85210');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -30,6 +30,7 @@ const Login = () => {
             <input
               type="text"
               value={username}
+              placeholder="Enter username"
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-orange-500 placeholder-orange-500/50"
             />
@@ -40,6 +41,7 @@ const Login = () => {
             <input
               type="password"
               value={password}
+              placeholder="Enter password"
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 text-orange-500 placeholder-orange-500/50"
             />
